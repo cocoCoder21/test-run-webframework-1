@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "app1/base.html" %}
+{% load my_templates %}
+
+
+    {% block body_block%}
+
+      <h1>hiii!</h1>
+      <!-- <h1>This is the index.html page</h1> -->
+    <h1>{{ text|upper}}</h1>
+    <h1>{{ number|add:"99"}}</h1>
+    {% endblock %}
